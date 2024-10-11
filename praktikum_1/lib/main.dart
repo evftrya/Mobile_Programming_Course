@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
+// import 'package:praktikum_1/layout.dart';
+import 'package:praktikum_1/latihan2.dart';
 import 'package:praktikum_1/layout.dart';
+import 'package:praktikum_1/tabbar.dart';
+import 'package:praktikum_1/pageView.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,7 +16,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Tugas 2 Mobile',
+      title: 'Praktikum',
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -32,7 +36,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Evi_1201222005(),
+      home: Page_View(),
     );
   }
 }

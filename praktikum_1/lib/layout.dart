@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class Evi_1201222005 extends StatelessWidget {
-  const Evi_1201222005({super.key});
+class Evi_1201222005s extends StatelessWidget {
+  const Evi_1201222005s({super.key});
 
   @override
   Widget build(BuildContext context) {
