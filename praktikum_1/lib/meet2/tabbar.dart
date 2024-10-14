@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:praktikum_1/latihan2.dart';
-import 'package:praktikum_1/latihan1.dart';
+import 'package:praktikum_1/meet2/latihan1.dart';
+import 'package:praktikum_1/meet1/latihan1.dart';
 
 class tabbar extends StatelessWidget {
   const tabbar({super.key});

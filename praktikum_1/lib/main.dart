@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 // import 'package:praktikum_1/layout.dart';
-import 'package:praktikum_1/latihan2.dart';
-import 'package:praktikum_1/layout.dart';
-import 'package:praktikum_1/tabbar.dart';
-import 'package:praktikum_1/pageView.dart';
+import 'package:praktikum_1/meet2/latihan1.dart';
+import 'package:praktikum_1/meet1/latihan1.dart';
+import 'package:praktikum_1/tugas/layout.dart';
+import 'package:praktikum_1/meet2/tabbar.dart';
+import 'package:praktikum_1/meet2/pageView.dart';
+import 'package:praktikum_1/meet3/first.dart';
 
 void main() {
   runApp(const MyApp());
@@ -36,7 +38,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Page_View(),
+      home: ButtonScreenState(),
     );
   }
 }

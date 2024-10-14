@@ -21,7 +21,7 @@ class _Evi_1201222005State extends State<Evi_1201222005> {
           padding: EdgeInsets.all(20),
           alignment: FractionalOffset(0.5, 0.5),
           child: Text(
-            "Nama Anda",
+            "Evi_1201222005",
             style: TextStyle(
                 color: Colors.green, fontSize: 24, fontWeight: FontWeight.bold),
           ),
