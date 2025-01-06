@@ -8,7 +8,7 @@ class latihan_2 extends StatelessWidget {
     return Scaffold(
       body: Column(
         children: [
-          Container(
+          SizedBox(
             width: double.infinity,
             height: 500,
             child: GridView.count(
@@ -19,25 +19,25 @@ class latihan_2 extends StatelessWidget {
                   width: 100,
                   height: 100,
                   color: Colors.red,
-                  margin: EdgeInsets.all(5),
+                  margin: const EdgeInsets.all(5),
                 ),
                 Container(
                   width: 100,
                   height: 100,
                   color: Colors.blue,
-                  margin: EdgeInsets.all(5),
+                  margin: const EdgeInsets.all(5),
                 ),
                 Container(
                   width: 100,
                   height: 100,
                   color: Colors.green,
-                  margin: EdgeInsets.all(5),
+                  margin: const EdgeInsets.all(5),
                 ),
                 Container(
                   width: 100,
                   height: 100,
                   color: Colors.black,
-                  margin: EdgeInsets.all(5),
+                  margin: const EdgeInsets.all(5),
                 )
               ],
             ),
@@ -50,12 +50,12 @@ class latihan_2 extends StatelessWidget {
                   height: 100,
                   color: Colors.yellow[900],
                 ),
-                Icon(
+                const Icon(
                   Icons.person,
                   size: 100,
                 ),
                 Container(
-                  child: Column(
+                  child: const Column(
                     children: [
                       Text(
                         "Rifqy",

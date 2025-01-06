@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:praktikum_1/meet3n4/button.dart';
 
 class AdvanceLayout extends StatefulWidget {
   const AdvanceLayout({super.key});
@@ -27,7 +26,7 @@ class _AdvanceLayout extends State<AdvanceLayout> {
     return Scaffold(
       body: SafeArea(
         child: DefaultTextStyle(
-            style: TextStyle(
+            style: const TextStyle(
               color: Colors.black,
               fontSize: 40,
             ),
@@ -35,6 +34,7 @@ class _AdvanceLayout extends State<AdvanceLayout> {
                 ? Column(children: [
                     pags.elementAt(_selectIndex),
                   ])
+
                 : Center(
                     child: pags.elementAt(_selectIndex),
                   )),

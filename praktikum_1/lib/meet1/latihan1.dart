@@ -17,10 +17,10 @@ class _Evi_1201222005State extends State<Evi_1201222005> {
           color: Colors.green,
           width: 300,
           height: 300,
-          margin: EdgeInsets.all(20),
-          padding: EdgeInsets.all(20),
-          alignment: FractionalOffset(0.5, 0.5),
-          child: Text(
+          margin: const EdgeInsets.all(20),
+          padding: const EdgeInsets.all(20),
+          alignment: const FractionalOffset(0.5, 0.5),
+          child: const Text(
             "Evi_1201222005",
             style: TextStyle(
                 color: Colors.green, fontSize: 24, fontWeight: FontWeight.bold),
@@ -35,19 +35,19 @@ class _Evi_1201222005State extends State<Evi_1201222005> {
               children: [
                 Container(
                   color: Colors.orange,
-                  child: FlutterLogo(
+                  child: const FlutterLogo(
                     size: 60.0,
                   ),
                 ),
                 Container(
                   color: Colors.blue,
-                  child: FlutterLogo(
+                  child: const FlutterLogo(
                     size: 60.0,
                   ),
                 ),
                 Container(
                   color: Colors.purple,
-                  child: FlutterLogo(
+                  child: const FlutterLogo(
                     size: 60.0,
                   ),
                 ),

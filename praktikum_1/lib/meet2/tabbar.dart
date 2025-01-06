@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:praktikum_1/meet2/latihan1.dart';
 import 'package:praktikum_1/meet1/latihan1.dart';
 
@@ -11,7 +12,7 @@ class tabbar extends StatelessWidget {
       length: 6,
       child: Scaffold(
         appBar: AppBar(
-          bottom: TabBar(isScrollable: true, tabs: [
+          bottom: const TabBar(isScrollable: true, tabs: [
             Tab(
               icon: Icon(Icons.home_filled),
               text: "Home",
@@ -38,7 +39,7 @@ class tabbar extends StatelessWidget {
             ),
           ]),
         ),
-        body: SafeArea(
+        body: const SafeArea(
           child: TabBarView(
             children: [
               Home(),
@@ -62,7 +63,7 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return const Column(
       children: [
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,

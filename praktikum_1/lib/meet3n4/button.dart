@@ -18,7 +18,7 @@ class _ButtonScreenStateState extends State<ButtonScreenState> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             TextButton(
@@ -28,9 +28,9 @@ class _ButtonScreenStateState extends State<ButtonScreenState> {
               onPressed: () {
                 ScaffoldMessenger.of(context).showSnackBar(
                   SnackBar(
-                    duration: Duration(seconds: 2),
+                    duration: const Duration(seconds: 2),
                     action: SnackBarAction(label: 'Detail', onPressed: () {}),
-                    content: Text(
+                    content: const Text(
                       'Pesan Berhasil',
                       style: TextStyle(
                         color: Colors.cyanAccent,
@@ -39,7 +39,7 @@ class _ButtonScreenStateState extends State<ButtonScreenState> {
                   ),
                 );
               },
-              child: Text(
+              child: const Text(
                 'Text Button x Snack Bar',
                 style: TextStyle(
                   fontSize: 24,
@@ -56,45 +56,45 @@ class _ButtonScreenStateState extends State<ButtonScreenState> {
                   context: context,
                   builder: (context) {
                     return AlertDialog(
-                      title: Text(
+                      title: const Text(
                         'Hapus Data',
                         style: TextStyle(fontWeight: FontWeight.bold),
                       ),
-                      content: Text('r u sure wanna delete this data?'),
+                      content: const Text('r u sure wanna delete this data?'),
                       actions: [
                         TextButton(
                           onPressed: () {
                             Navigator.pop(context);
                             //untuk menutup pop up yg sedang terbuka
                           },
+                          style:
+                              TextButton.styleFrom(backgroundColor: Colors.red),
                           child: Text(
                             'No',
                             style: TextStyle(
                               color: Colors.white,
                             ),
                           ),
-                          style:
-                              TextButton.styleFrom(backgroundColor: Colors.red),
                         ),
                         TextButton(
                           onPressed: () {
                             Navigator.pop(context);
                           },
+                          style: TextButton.styleFrom(
+                              backgroundColor: Colors.green),
                           child: Text(
                             'Sure',
                             style: TextStyle(
                               color: Colors.white,
                             ),
                           ),
-                          style: TextButton.styleFrom(
-                              backgroundColor: Colors.green),
                         )
                       ],
                     );
                   },
                 );
               },
-              child: Text(
+              child: const Text(
                 "Elevated Button x Allert Dialog",
                 style: TextStyle(
                   color: Colors.white,
@@ -107,42 +107,42 @@ class _ButtonScreenStateState extends State<ButtonScreenState> {
                   context: context,
                   builder: (context) {
                     return SimpleDialog(
-                      title: Text(
+                      title: const Text(
                         'Pilih Metode',
                         style: TextStyle(fontWeight: FontWeight.bold),
                       ),
                       children: [
                         SimpleDialogOption(
-                          child: Text('BCA'),
+                          child: const Text('BCA'),
                           onPressed: () {},
                         ),
                         SimpleDialogOption(
                           onPressed: () {},
-                          child: Text('BRI'),
+                          child: const Text('BRI'),
                         ),
                         SimpleDialogOption(
                           onPressed: () {},
-                          child: Text('BSI'),
+                          child: const Text('BSI'),
                         ),
                       ],
                     );
                   },
                 );
               },
-              child: Text(
+              child: const Text(
                 "Outlined Button x Simple Dialog",
                 style: TextStyle(
-                  color: const Color.fromARGB(255, 96, 30, 30),
+                  color: Color.fromARGB(255, 96, 30, 30),
                 ),
               ),
             ),
             IconButton(
               onPressed: () {},
-              icon: Icon(Icons.thumb_up),
+              icon: const Icon(Icons.thumb_up),
             ),
             DropdownButton<String>(
                 value: _selectedItem,
-                items: [
+                items: const [
                   DropdownMenuItem(
                     value: 'Item 1',
                     child: Text('Item 1'),
@@ -166,7 +166,7 @@ class _ButtonScreenStateState extends State<ButtonScreenState> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
-        child: Icon(Icons.add),
+        child: const Icon(Icons.add),
       ),
       //FloatingActBut bisa tanpa body karena setara body
     );

@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:praktikum_1/API/todo_api_crud.dart';
+import 'package:praktikum_1/API/view_todo_Api.dart';
+import 'package:praktikum_1/Notifikasi/notifikasi.dart';
 // import 'package:praktikum_1/layout.dart';
 import 'package:praktikum_1/meet1/latihan1.dart';
 import 'package:praktikum_1/meet2/latihan1.dart';
@@ -8,8 +11,22 @@ import 'package:praktikum_1/meet3n4/button.dart';
 import 'package:praktikum_1/meet4/bot_navbar.dart';
 import 'package:praktikum_1/tugas/tugas4lms.dart';
 import 'package:praktikum_1/tugas/tugas5lms.dart';
+import 'package:praktikum_1/meet5/arguments_screen.dart';
+import 'package:praktikum_1/tugas/tugas6lms.dart';
+import 'package:praktikum_1/meet6/media_camera.dart';
+import 'package:praktikum_1/meet7/localData.dart';
+import 'package:praktikum_1/meet5/arguments_screen.dart';
+import 'package:praktikum_1/meet5/first_screen.dart';
+import 'package:praktikum_1/meet5/second_screen.dart';
+import 'package:praktikum_1/meet5/return_data_screen.dart';
+import 'package:praktikum_1/meet89/todo_crud.dart';
+// import 'package:praktikum_1/meet89/TodoCrud';
 
-void main() {
+final GlobalKey<NavigatorState> navKey = GlobalKey<NavigatorState>();
+
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Notifikasi.init();
   runApp(const MyApp());
 }
 
@@ -40,7 +57,30 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: AdvanceLayout(),
+      initialRoute: '/todoApi',
+      navigatorKey: navKey,
+      routes: {
+        '/botnav': (context) => const Botnavbar(),
+        '/return-data': (context) => const ReturnDataScreen(),
+        '/button': (context) => const ButtonScreenState(),
+        '/tugas6': (context) => const tugas_6_lms(),
+        '/meet7': (context) => localData(),
+        '/tugas4': (context) => const Evi_1201222005s(),
+        '/tugas5': (context) => const AdvanceLayout(),
+        '/M1/l1': (context) => const latihan_2(),
+        '/M1/pageView': (context) => const Page_View(),
+        '/M1/tabbar': (context) => const tabbar(),
+        '/media-camera': (context) => const mediaCamera(),
+        '/': (context) => const FirstScreen(),
+        '/second': (context) => const SecondScreen(),
+        '/todo': (context) => const TodoCrud(),
+
+        '/todoApi': (context) => const todoApiCrud(),
+        // '/viewTodoApi': (context) => const View_Todo_API(),
+
+        '/arguments': (context) =>
+            const ArgumentsScreen(message: "Hi Everyone"),
+      },
     );
   }
 }

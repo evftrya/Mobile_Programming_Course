@@ -9,7 +9,7 @@ class Page_View extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: PageView(
-        children: [Home(), latihan_2()],
+        children: const [Home(), latihan_2()],
       ),
     );
   }

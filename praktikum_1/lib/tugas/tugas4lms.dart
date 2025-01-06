@@ -5,22 +5,22 @@ class Evi_1201222005s extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return new Scaffold(
-      appBar: new AppBar(
+    return Scaffold(
+      appBar: AppBar(
         backgroundColor: Colors.white,
         title: DefaultTextStyle(
-          style: TextStyle(),
-          child: new Row(
+          style: const TextStyle(),
+          child: Row(
             children: [
-              new Container(
+              Container(
                 color: Colors.white,
-                child: new Column(
+                child: const Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
+                  children: const [
                     Text(
                       "Welcome,",
                       style: TextStyle(
-                          color: const Color.fromARGB(255, 96, 108, 186),
+                          color: Color.fromARGB(255, 96, 108, 186),
                           fontWeight: FontWeight.bold,
                           fontSize: 30),
                     ),
@@ -34,8 +34,8 @@ class Evi_1201222005s extends StatelessWidget {
                   ],
                 ),
               ),
-              Spacer(),
-              new Container(
+              const Spacer(),
+              Container(
                 width: 45.0,
                 height: 45.0,
                 decoration: BoxDecoration(
@@ -47,22 +47,22 @@ class Evi_1201222005s extends StatelessWidget {
           ),
         ),
       ),
-      body: new Container(
-        color: Color.fromARGB(255, 255, 255, 255),
+      body: Container(
+        color: const Color.fromARGB(255, 255, 255, 255),
         width: MediaQuery.of(context).size.width,
-        child: new Column(
+        child: Column(
           children: [
-            new Container(
-              margin: EdgeInsets.symmetric(vertical: 50.0),
+            Container(
+              margin: const EdgeInsets.symmetric(vertical: 50.0),
               color: Colors.white,
-              child: new Row(
+              child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  new Container(
+                  Container(
                     width: 250.0,
                     height: 250.0,
                     decoration: BoxDecoration(
-                        gradient: LinearGradient(
+                        gradient: const LinearGradient(
                           colors: [
                             Color.fromARGB(255, 63, 32, 217),
                             Color(0xFF8F89C5)

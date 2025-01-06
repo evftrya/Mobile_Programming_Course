@@ -25,12 +25,12 @@ class _BotnavbarState extends State<Botnavbar> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Latihan Flutter'),
+        title: const Text('Latihan Flutter'),
         backgroundColor: Colors.blue,
         centerTitle: true,
         actions: [
           PopupMenuButton(
-            icon: Icon(
+            icon: const Icon(
               Icons.more_vert_sharp,
               color: Colors.white,
             ),
@@ -38,7 +38,7 @@ class _BotnavbarState extends State<Botnavbar> {
               return [
                 PopupMenuItem(
                   onTap: () {},
-                  child: Text('Logout'),
+                  child: const Text('Logout'),
                 ),
               ];
             },
