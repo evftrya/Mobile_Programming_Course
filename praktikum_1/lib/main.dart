@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:praktikum_1/API/todo_api_crud.dart';
-import 'package:praktikum_1/API/view_todo_Api.dart';
 import 'package:praktikum_1/Notifikasi/notifikasi.dart';
 // import 'package:praktikum_1/layout.dart';
 import 'package:praktikum_1/meet1/latihan1.dart';
@@ -15,9 +14,9 @@ import 'package:praktikum_1/meet5/arguments_screen.dart';
 import 'package:praktikum_1/tugas/tugas6lms.dart';
 import 'package:praktikum_1/meet6/media_camera.dart';
 import 'package:praktikum_1/meet7/localData.dart';
-import 'package:praktikum_1/meet5/arguments_screen.dart';
 import 'package:praktikum_1/meet5/first_screen.dart';
 import 'package:praktikum_1/meet5/second_screen.dart';
+
 import 'package:praktikum_1/meet5/return_data_screen.dart';
 import 'package:praktikum_1/meet89/todo_crud.dart';
 // import 'package:praktikum_1/meet89/TodoCrud';
@@ -57,25 +56,26 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      initialRoute: '/todoApi',
+      initialRoute: '/button',
       navigatorKey: navKey,
       routes: {
-        '/botnav': (context) => const Botnavbar(),
-        '/return-data': (context) => const ReturnDataScreen(),
-        '/button': (context) => const ButtonScreenState(),
-        '/tugas6': (context) => const tugas_6_lms(),
-        '/meet7': (context) => localData(),
-        '/tugas4': (context) => const Evi_1201222005s(),
-        '/tugas5': (context) => const AdvanceLayout(),
+        '/meet1': (context) => const Evi_1201222005(),
         '/M1/l1': (context) => const latihan_2(),
         '/M1/pageView': (context) => const Page_View(),
         '/M1/tabbar': (context) => const tabbar(),
-        '/media-camera': (context) => const mediaCamera(),
-        '/': (context) => const FirstScreen(),
+        '/button': (context) => const ButtonScreenState(),
+        '/botnav': (context) => const Botnavbar(),
+        '/firstscreen': (context) => const FirstScreen(),
         '/second': (context) => const SecondScreen(),
+        '/return-data': (context) => const ReturnDataScreen(),
+        '/media-camera': (context) => const mediaCamera(),
+        '/meet7': (context) => localData(),
         '/todo': (context) => const TodoCrud(),
-
         '/todoApi': (context) => const todoApiCrud(),
+        '/tugas4': (context) => const Evi_1201222005s(),
+        '/tugas5': (context) => const AdvanceLayout(),
+        '/tugas6': (context) => const tugas_6_lms(),
+
         // '/viewTodoApi': (context) => const View_Todo_API(),
 
         '/arguments': (context) =>
